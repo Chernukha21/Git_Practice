@@ -799,8 +799,21 @@
 //     return res;
 // }
 // console.log(capitals('HowAreYou'))
-let incr = 10;
-let decr = 10;
-    incr++;
-    decr--;
+const numberOfFilms = +prompt('How much films have already seen?','');
+const a = prompt('One of the last watched movie?','');
+const b = prompt('How did you can rate it?','');
+const c = prompt('One of the last watched movie?','');
+const d = prompt('How did you can rate it?','');
+
+const personalMovies = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+}
+personalMovies.movies[a] = b;
+personalMovies.movies[c] = d;
+console.log(personalMovies);
+
 
