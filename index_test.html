@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container" >
+    <form method="post" id="ajax_form"
+            style="display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 25%;
+            height: 150px;
+            margin: 10px 10px;">
+        <input type="text" placeholder="name"  data-name="name">
+        <input type="email" placeholder="email" data-mail="email">
+        <input type="tel" placeholder="phone"  data-tel="phone">
+        <input type="text" placeholder="website" data-site="site">
+        <button type="submit">Send</button>
+    </form>
+    <ul class="list-users">
+    </ul>
+</div>
+<div></div>
+<div></div>
+<script src="app.js"></script>
+</body>
+</html>

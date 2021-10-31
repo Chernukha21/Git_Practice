@@ -1,0 +1,28 @@
+function testDateTime(a, b) {
+    var x = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+    var date1 = new Date(a); 
+    var date2 = new Date(b);
+    if (date1 > date2){
+        return(x[date1.getDay()]);
+    }else{
+        return(x[date2.getDay()]);
+    }
+}
+
+
+методы массивов
+const numArr = [2,32,1234,54,323];
+let value;
+value = numArr.length; //длина массива
+value = Array.isArray(numArr);//проверка являеться ли обьект массивом
+value = numArr.indexOf(32);// поиск индекса элемента в массиве
+value = numArr.push(100);//добавляет элемент в конец массива
+value = numArr.pop();// удаляет элемент с конца массива и возвращает его
+value = numArr.unshift(111);//добавляет в начало массива элемент
+value = numArr.shift();// удаляет элемент с начала массива
+value = numArr.slice(0,2)// вырезает элементы в промежутке и возвращает их не изменяет исходный массив
+value = numArr.splice(1,1,"one", "two");//принимает с какого элемента удалять и количество, меняет массив погуглить еще нужно
+value = numArr.reverse();
+value = numArr.concat(numArr);//соеденияем массивы а если нужно продублировать пишем его в аргументы
+value = 
+console.log(value,numArr);
