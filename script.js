@@ -800,10 +800,6 @@
 // }
 // console.log(capitals('HowAreYou'))
 const numberOfFilms = +prompt('How much films have already seen?','');
-const a = prompt('One of the last watched movie?','');
-const b = prompt('How did you can rate it?','');
-const c = prompt('One of the last watched movie?','');
-const d = prompt('How did you can rate it?','');
 
 const personalMovies = {
     count: numberOfFilms,
@@ -812,8 +808,31 @@ const personalMovies = {
     genres: [],
     private: false
 }
-personalMovies.movies[a] = b;
-personalMovies.movies[c] = d;
+
+
+for(let i=0; i < 2; i++){
+    const a = prompt('One of the last watched movie?','');
+    const b = prompt('How did you can rate it?','');
+    if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
+        personalMovies.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        i--;
+    }
+    if(personalMovies.count < 10){
+        alert('Просмотрено довольно мало фильмов');
+    }else if(personalMovies.count >= 10 && personalMovies.count < 30){
+        alert('Вы классический зритель');
+    }else if(personalMovies.count >= 30){
+        alert('Вы киноман')
+    }else{
+        alert('Произошла ошибка');
+    }
+    personalMovies.movies[a] = b;
+}
 console.log(personalMovies);
+
+
 
 
