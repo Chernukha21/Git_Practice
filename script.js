@@ -813,7 +813,7 @@ const personalMovies = {
 for(let i=0; i < 2; i++){
     const a = prompt('One of the last watched movie?','');
     const b = prompt('How did you can rate it?','');
-    if (a != null && b != null && a !== '' && b !== '' && a.length < 50) {
+    if (a !== null && b !== null && a !== '' && b !== '' && a.length < 50) {
         personalMovies.movies[a] = b;
         console.log('done');
     } else {
@@ -829,7 +829,6 @@ for(let i=0; i < 2; i++){
     }else{
         alert('Произошла ошибка');
     }
-    personalMovies.movies[a] = b;
 }
 console.log(personalMovies);
 
