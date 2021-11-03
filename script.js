@@ -830,7 +830,8 @@ for(let i=0; i < 2; i++){
         alert('Произошла ошибка');
     }
 }
-console.log(personalMovies);
+
+
 
 
 
